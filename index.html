@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>MiraiDev - Uma visão do futuro</title>
+    <link rel="stylesheet" href="/css/style.css">
+    
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <meta name="robots" content="index, follow">
+    <meta name="keywords" content="desenvolvimento de sites, desenvolvimento de sistemas, sites, sistemas, hotsite, hotsites, landing pages, criação de sites.">
+    <meta name="description" content="Desenvolvimento de sites, sistemas, landing pages e hot sites. MiraiDev - Uma visão do futuro.">
+</head>
+<body>
+<header style="position: relative;" class="height100">
+    <div class="wrapper">
+        <div id="top">
+            <h1 id="logo"><a href="/">Mirai<span class="orange">Dev</span></a></h1>
+
+            <input type="checkbox" id="control-nav">
+            <label for="control-nav" class="control-nav"></label>
+            <label for="control-nav" class="control-nav-close"></label>
+
+            <nav>
+                <ul>
+                    <li>
+                        <a href="/#aboutUs">Sobre Nós</a>
+                    </li>
+                    <li>
+                        <a href="/#ourServices">Serviços</a>
+                    </li>
+                    <li>
+                        <a href="/#contactUs">Contato</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+                <div id="intro">
+            <h2 id="slogan">
+                Apenas uma <strong>jovem</strong> e <strong>divertida</strong> equipe querendo melhorar a <strong>web</strong>
+            </h2>
+        </div>
+            </div>
+        <a class="scroll" href="/#aboutUs">
+        <img src="/img/icons/icon-scroll.png">
+        Conheça-nos
+    </a>
+    </header><section id="aboutUs">
+    <div class="wrapper">
+        <h2 class="title">Sobre Nós</h2>
+        <p><strong>MiraiDev</strong> é atualmente formada por jovens desenvolvedores, com visão e em constante aprendizado e evolução, sempre na intenção de trazer e utilizar as melhores técnicas disponíveis no mercado, visando sempre a melhor qualidade e meios para atingir os objetivos esperados para seus produtos.</p>
+    </div>
+</section>
+<section id="ourServices">
+    <div class="wrapper">
+        <h2 class="title">Sobre nossos serviços</h2>
+        <div class="service">
+            <img src="/img/icons/icon-layouts.png" alt="Ótimos Layouts" title="Ótimos Layouts">
+            <h3>Ótimos Layouts</h3>
+            <p>Uma boa aparência e facilidade de utilização em um site é considerado um dos aspectos mais importantes no sucesso de um site. E no caso de sistemas, é imprescindível para a boa aceitação do sistema em sua empresa.</p>
+        </div>
+        <div class="service">
+            <img src="/img/icons/icon-coding.png" alt="Incrível codificação" title="Incrível codificação">
+            <h3>Incrível codificação</h3>
+            <p>Um código fonte bem construido e estruturado proporcionará para seu sistema a capacidade de ser escalável, podendo ele crescer com o tempo, a medida que novas funcionalidades para serem implementadas se tornem necessárias.</p>
+        </div>
+        <div class="service">
+            <img src="/img/icons/icon-awesomeness.png" alt="Impressionante" title="Impressionante">
+            <h3>Impressionante!</h3>
+            <p>Não é de hoje que a internet se mostra uma ferramenta imprescindível para sua empresa, e com o avanço da web quem não tem seu lugar marcado na internet fica para trás na corrida pelo sucesso!</p>
+        </div>
+    </div>
+</section>
+ 
+<footer>
+    <div id="contactUs" class="overlay">
+        <div class="wrapper">
+            <h2 class="title">Fale Conosco</h2>
+            <!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo accusamus quisquam deleniti quos. Non.</p>-->
+
+            <form class="fale-conosco" id="fale-conosco" action="/contato/salvar" enctype="multipart/form-data" method="post">
+               
+                
+                <input type="text" required="" placeholder="Nome" name="nome">
+                <input type="email" requried="" placeholder="E-mail" name="email">
+                <textarea placeholder="Mensagem" required="" name="msg"></textarea>
+                <input type="submit" value="Enviar">
+            </form>
+            <small>Copyright © MiraiDev 2017</small>
+        </div>
+    </div>
+</footer>
+
+<script src="/js/jquery.min.js"></script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-72164007-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<script>
+    $(function() {
+        $('a[href*=#]:not([href=#])').click(function() {
+            if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+                if (target.length) {
+                    $('html,body').animate({
+                        scrollTop: target.offset().top
+                    }, 1000);
+                    return false;
+                }
+            }
+        });
+    });
+</script>
+
+
+</body></html>
